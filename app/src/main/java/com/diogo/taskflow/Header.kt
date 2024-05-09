@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.sp
 
 @SuppressLint("NewApi")
 @Composable
-fun Header(onAddButtonClick: () -> Unit){
+fun header(onAddButtonClick: () -> Unit){
 
     Row(
         modifier = Modifier
@@ -65,6 +65,6 @@ fun Header(onAddButtonClick: () -> Unit){
 
 @Composable
 @Preview
-fun HeaderPreview(){
-    Header {}
+fun headerPreview(){
+    header {}
 }

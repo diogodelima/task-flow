@@ -10,7 +10,7 @@ import com.diogo.taskflow.model.task.Task
 import com.diogo.taskflow.model.task.service.TaskService
 
 @Composable
-fun TaskPanel(taskService: TaskService){
+fun taskPanel(taskService: TaskService){
 
     val tasks = remember { setOf<Task>().toMutableStateList() }
 
@@ -28,7 +28,7 @@ fun TaskPanel(taskService: TaskService){
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         items(items = tasks){ task ->
-            TaskItem(task)
+            taskItem(task)
         }
     }
 

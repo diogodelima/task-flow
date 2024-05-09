@@ -55,7 +55,7 @@ fun TaskFlowContent() {
 
         var showCustomDialogWithResult by remember { mutableStateOf(false) }
 
-        Header {
+        header {
             showCustomDialogWithResult = !showCustomDialogWithResult
         }
 
@@ -74,14 +74,6 @@ fun TaskFlowContent() {
             )
         }
 
-        TaskPanel(TASKSERVICE)
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    TaskFlowTheme {
-
+        taskPanel(TASKSERVICE)
     }
 }

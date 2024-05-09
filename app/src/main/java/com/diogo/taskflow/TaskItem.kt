@@ -25,7 +25,7 @@ import java.time.LocalDate
 
 @SuppressLint("NewApi")
 @Composable
-fun TaskItem(task: Task){
+fun taskItem(task: Task){
 
     Row(
         modifier = Modifier
@@ -97,6 +97,6 @@ fun TaskItem(task: Task){
 @SuppressLint("NewApi")
 @Composable
 @Preview
-fun TaskItemPreview(){
-    TaskItem(task = Task("Exame", "Telecomunicações II", LocalDate.of(2024, 6, 22)))
+fun taskItemPreview(){
+    taskItem(task = Task("Exame", "Telecomunicações II", LocalDate.of(2024, 6, 22)))
 }
